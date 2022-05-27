@@ -1,7 +1,7 @@
 def argument
 	saisie = /\A[-+]?\d+\z/
 
-	if(ARGV.length != 1 || ARGV[0].match?(saisie) == false)
+	if(ARGV.length != 1 || ARGV[0].match?(saisie) == false || ARGV[0].split(' ').length != 1)
 		puts "error"
 	else
 		fibonacci
